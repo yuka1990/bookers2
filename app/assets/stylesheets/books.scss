@@ -1,3 +1,64 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Common
+.commonul{
+  list-style-type:none;
+  margin:15px;
+}
+.commonli{
+  display:inline-block;
+  text-align:center;
+  width:50px;
+}
+.commonli + .commonli {
+  border-left:1px solid #000;
+}
+.create-box{
+  margin:0 20px;
+}
+
+// Edit
+h3{
+  margin :20px;
+}
+.edit{
+  margin:20px;
+}
+
+//Show
+.show{
+  margin:40px;
+  display:flex;
+  flex-wrap:wrap;
+}
+// new
+h2{
+  margin :20px;
+}
+.new{
+  margin:20px;
+  display:flex;
+}
+.box{
+  display:flex;
+  flex-direction:column;
+  margin:0px 10px 0px 0px;
+}
+.title{
+  text-align:center;
+}
+.errorbox{
+  width:120px;
+  height:20px;
+  margin:20px;
+  background-color:red;
+}
+.book{
+  margin:20px;
+}
