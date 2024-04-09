@@ -37,28 +37,7 @@ h3{
   display:flex;
   flex-wrap:wrap;
 }
-// new
-h2{
-  margin :20px;
+.comment{
+  color:green;
 }
-.new{
-  margin:20px;
-  display:flex;
-}
-.box{
-  display:flex;
-  flex-direction:column;
-  margin:0px 10px 0px 0px;
-}
-.title{
-  text-align:center;
-}
-.errorbox{
-  width:120px;
-  height:20px;
-  margin:20px;
-  background-color:red;
-}
-.book{
-  margin:20px;
-}
+// index
