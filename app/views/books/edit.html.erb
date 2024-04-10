@@ -1,4 +1,17 @@
 <h2>Editing Book</h2>
+
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>errors prohibited this book from being saved:
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+
  <%= form_with model:@book,url:book_path(@book.id),　method: :patch do |f| %>
  <div class="section">
   <p>Title</p>
