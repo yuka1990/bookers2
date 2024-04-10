@@ -1,11 +1,23 @@
-<h3>Editing Book</h3>
+<h2>Editing Book</h2>
  <%= form_with model:@book,url:book_path(@book.id),　method: :patch do |f| %>
- <p>Title</p>
- <%= f.text_field :title %>
- <p>Body</p>
- <%= f.text_area :body %>
+ <div class="section">
+  <p>Title</p>
+  <%= f.text_field :title %>
+ </div>
+ 
+ 
+ <div class="section">
+  <p>Body</p>
+  <%= f.text_area :body %>
+ </div>
+ 
+ <div class="section">
  <%= f.submit 'Update Book'%>
+ </div>
+ 
 <% end %>
+
+
 
 <ul class="commonul">
  <li class="commonli"><%= link_to'Show', book_path(params[:id]) %></li>
